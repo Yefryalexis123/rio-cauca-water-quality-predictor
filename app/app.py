@@ -41,7 +41,7 @@ html, body, [class*="css"] {
     margin: 0 0 0.3rem;
     color: white !important;
 }
-.hero-header p { font-size: 0.95rem; color: rgba(255,255,255,0.75); margin: 0; }
+.hero-header p { font-size: 0.95rem; color: #FFFFFF !important; margin: 0; text-shadow: 0 1px 3px rgba(0,0,0,0.5); font-weight: 500; }
 .badge-algo {
     display: inline-block;
     background: rgba(14,165,233,0.20);
@@ -180,7 +180,7 @@ label,
 /* ── Botón ── */
 .stButton > button {
     background: #1B6FBF !important;
-    color: white !important;
+    color: #FFFFFF !important;
     border: none !important;
     border-radius: 10px !important;
     padding: 0.6rem 2rem !important;
@@ -188,8 +188,13 @@ label,
     font-weight: 600 !important;
     width: 100% !important;
     transition: opacity 0.2s !important;
+    opacity: 1 !important;
 }
 .stButton > button:hover { opacity: 0.85 !important; }
+.stButton > button p,
+.stButton > button span {
+    color: #FFFFFF !important;
+}
 
 #MainMenu, footer, header { visibility: hidden; }
 </style>
@@ -201,8 +206,7 @@ st.markdown("""
 <div class="hero-header">
     <div class="badge-algo">Random Forest · Clasificación multiclase</div>
     <h1>Predicción de Calidad del Agua — Río Cauca</h1>
-    <p>Ingrese los parámetros fisicoquímicos medidos en el río y el modelo clasificará
-    la calidad del agua como Buena, Regular o Mala.</p>
+    <span style="font-size:0.95rem; color:#FFFFFF !important; font-weight:500; display:block; margin-top:0.3rem;">Ingrese los parámetros fisicoquímicos medidos en el río y el modelo clasificará la calidad del agua como Buena, Regular o Mala.</span>
 </div>
 """, unsafe_allow_html=True)
 
