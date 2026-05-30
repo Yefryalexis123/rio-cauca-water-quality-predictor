@@ -8,7 +8,7 @@ La clasificacion se basa en el nivel de oxigeno disuelto del agua: valores mayor
 
 ## Demostracion
 
-**Aplicacion desplegada:** [[[https://rio-cauca-water-quality-predictor.streamlit.app]([https://rio-cauca-water-quality-predictor.streamlit.app](https://rio-cauca-water-quality-predictor-6rtfvyxdq7k4wkqryawjn6.streamlit.app/))](https://rio-cauca-water-quality-predictor-6rtfvyxdq7k4wkqryawjn6.streamlit.app/)](https://rio-cauca-water-quality-predictor-6rtfvyxdq7k4wkqryawjn6.streamlit.app/)
+**Aplicacion desplegada:** [[[https://rio-cauca-water-quality-predictor.streamlit.app]([https://rio-cauca-water-quality-predictor.streamlit.app](https://rio-cauca-water-quality-predictor-6rtfvyxdq7k4wkqryawjn6.streamlit.app/))]
 
 **Repositorio GitHub:** [https://github.com/Yefryalexis123/rio-cauca-water-quality-predictor](https://github.com/Yefryalexis123/rio-cauca-water-quality-predictor)
 
