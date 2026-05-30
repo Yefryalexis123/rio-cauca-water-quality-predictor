@@ -192,8 +192,8 @@ html, body, [class*="css"] {
 }
 .stButton > button:hover { opacity: 0.85 !important; }
 
-label { color: #cccccc !important; }
-[data-testid="stMarkdownContainer"] p { color: #cccccc; }
+label { color: #e8f0f8 !important; }
+[data-testid="stMarkdownContainer"] p { color: #e8f0f8; }
 #MainMenu, footer, header { visibility: hidden; }
 </style>
 """, unsafe_allow_html=True)
