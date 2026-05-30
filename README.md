@@ -38,7 +38,7 @@ Accuracy del **72.27%** sobre el conjunto de prueba (split 80/20, `random_state=
 
 ## Dataset
 
-- **Fuente:** [(https://www.datos.gov.co/Ambiente-y-Desarrollo-Sostenible/Data-Hist-rica-de-Calidad-de-Agua/62gv-3857/about_data))](https://www.datos.gov.co/Ambiente-y-Desarrollo-Sostenible/Data-Hist-rica-de-Calidad-de-Agua/62gv-3857/about_data)
+- **Fuente:** [https://www.datos.gov.co/Ambiente-y-Desarrollo-Sostenible/Data-Hist-rica-de-Calidad-de-Agua/62gv-3857/about_data](https://www.datos.gov.co/Ambiente-y-Desarrollo-Sostenible/Data-Hist-rica-de-Calidad-de-Agua/62gv-3857/about_data)
 - **Registros:** 2368 muestras recolectadas desde 1990 hasta 2026
 - **Features originales:** 56 columnas (variables fisicoquimicas y metadatos)
 - **Features utilizadas (modelo final):** 15 variables seleccionadas por importancia de Random Forest
