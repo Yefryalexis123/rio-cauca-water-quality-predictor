@@ -1,9 +1,12 @@
+from pathlib import Path
 import joblib
 
-MODEL_PATH = "models/water_quality_pipeline.joblib"
+ROOT = Path(__file__).resolve().parent.parent
+
+MODEL_PATH = ROOT / "models" / "water_quality_pipeline.joblib"
 
 model = joblib.load(MODEL_PATH)
 
-
 def predict_water_quality(df):
-    return model.predict(df)[0]
+    prediction = model.predict(df)
+    return prediction[0]
