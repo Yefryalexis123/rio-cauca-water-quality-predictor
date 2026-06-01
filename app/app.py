@@ -291,6 +291,25 @@ with col_form:
         'SOLIDOS TOTALES (mg SST/l)':               'Sólidos totales (mg SST/l)',
     }
 
+    # ── Estado del formulario ────────────────────────────────────────────────
+    # Cada campo queda guardado en session_state para poder limpiarlo con un botón.
+    def input_key(nombre_variable):
+        return f"input_{nombre_variable}"
+
+    for var, valor_inicial in defaults.items():
+        st.session_state.setdefault(input_key(var), float(valor_inicial))
+
+    st.session_state.setdefault("mostrar_resultado", False)
+
+    def limpiar_formulario():
+        # Deja todos los campos en cero para ingresar nuevos valores desde cero.
+        for var in defaults:
+            st.session_state[input_key(var)] = 0.0
+        st.session_state["mostrar_resultado"] = False
+
+    def activar_clasificacion():
+        st.session_state["mostrar_resultado"] = True
+
     datos = {}
     cols_izq = list(FEATURE_COLUMNS[:8])
     cols_der = list(FEATURE_COLUMNS[8:])
@@ -300,21 +319,27 @@ with col_form:
         for var in cols_izq:
             datos[var] = st.number_input(
                 labels[var],
-                value=defaults[var],
                 min_value=0.0,
-                format="%.2f"
+                format="%.2f",
+                key=input_key(var),
             )
     with c2:
         for var in cols_der:
             datos[var] = st.number_input(
                 labels[var],
-                value=defaults[var],
                 min_value=0.0,
-                format="%.2f"
+                format="%.2f",
+                key=input_key(var),
             )
 
     st.markdown("<br>", unsafe_allow_html=True)
-    predecir = st.button("Clasificar calidad del agua")
+    btn_clasificar, btn_limpiar = st.columns([1, 1])
+    with btn_clasificar:
+        st.button("Clasificar calidad del agua", on_click=activar_clasificacion)
+    with btn_limpiar:
+        st.button("Limpiar valores", on_click=limpiar_formulario)
+
+    predecir = st.session_state["mostrar_resultado"]
 
 
 # ── Resultado ─────────────────────────────────────────────────────────────────
