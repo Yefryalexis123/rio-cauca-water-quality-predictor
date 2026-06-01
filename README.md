@@ -165,9 +165,15 @@ Fundación Universitaria Los Libertadores
 
 ---
 
+## Licencia
+
+MIT License
+
+---
+
 ## Referencias
 
-- Datos Abiertos Colombia. *Calidad del agua del Río Cauca*. https://www.datos.gov.co/Ambiente-y-Desarrollo-Sostenible/Data-Hist-rica-de-Calidad-de-Agua/62gv-3857/about_data
-- Breiman, L. (2001). Random Forests. *Machine Learning*, 45(1), 5–32. https://doi.org/10.1023/A:1010933404324
-- Pedregosa, F. et al. (2011). Scikit-learn: Machine Learning in Python. *JMLR*, 12, 2825–2830. http://jmlr.org/papers/v12/pedregosa11a.html
-- Streamlit Inc. (2024). *Streamlit Documentation*. https://docs.streamlit.io
+- Datos Abiertos Colombia. *Data Histórica de Calidad de Agua*. [En línea]. Disponible en: https://www.datos.gov.co/Ambiente-y-Desarrollo-Sostenible/Data-Hist-rica-de-Calidad-de-Agua/62gv-3857/about_data. [Accedido: mayo 2026].
+- L. Breiman, «Random Forests,» *Machine Learning*, vol. 45, no. 1, pp. 5–32, 2001. https://doi.org/10.1023/A:1010933404324
+- F. Pedregosa et al., «Scikit-learn: Machine Learning in Python,» *Journal of Machine Learning Research*, vol. 12, pp. 2825–2830, 2011. http://jmlr.org/papers/v12/pedregosa11a.html
+- Streamlit Inc., *Streamlit Documentation*, 2024. [En línea]. Disponible en: https://docs.streamlit.io. [Accedido: mayo 2026].
